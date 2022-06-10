@@ -17,7 +17,7 @@ namespace Restaurant_Core.Entities
         public double CalcoloPasto(){
             double total = 0;
             foreach (var piatto in Piatti)
-            { total += (float)piatto.Prezzo;}
+            { total += (double)piatto.Prezzo;}
             return total;
         }
     }
