@@ -8,12 +8,7 @@ using System.Threading.Tasks;
 
 namespace DomenicoElio_Bressanello_MVC.RestaurantEntity.Config
 {
-    public class PiattoConfig IEntityTypeConfiguration<Piatto>{
-        public void Configure(EntityTypeBuilder<Piatto> builder)
+    public class PiattoConfig
     {
-        builder.ToTable("Piatto");
-        builder.HasKey(t => t.Id);
-        builder.HasIndex(p => p.Nome).IsUnique();
-        builder.Property(p => p.Prezzo).HasColumnType("decimal(9,2)");
     }
 }
