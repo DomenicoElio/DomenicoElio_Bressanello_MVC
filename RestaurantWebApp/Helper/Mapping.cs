@@ -12,6 +12,8 @@ namespace DomenicoElio_Bressanello_MVC.RestaurantWebApp.Helper
 {
     public static class Mapping
     {
+
+        // copiato sulla base dell'esercitazione - progetto strutturato nel modo sbagliato quindi tutto non raggiungibile
         public static Piatto ToPiatto(this PiattoViewModel piatto)
         {
             return new Piatto
