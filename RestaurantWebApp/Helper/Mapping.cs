@@ -1,5 +1,6 @@
-﻿using DomenicoElio_Bressanello_MVC.Restaurant_Core.Entities;
-using DomenicoElio_Bressanello_MVC.RestaurantMVC.Models;
+﻿using Restaurant_Core.Entities;
+using Restaurant_Core.Interfaces;
+using Restaurant_Core.BusinessLayer;
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -13,7 +14,7 @@ namespace DomenicoElio_Bressanello_MVC.RestaurantWebApp.Helper
     public static class Mapping
     {
 
-        // copiato sulla base dell'esercitazione - progetto strutturato nel modo sbagliato quindi tutto non raggiungibile
+        // copiato sulla base dell'esercitazione - avevo fatto male gli import
         public static Piatto ToPiatto(this PiattoViewModel piatto)
         {
             return new Piatto

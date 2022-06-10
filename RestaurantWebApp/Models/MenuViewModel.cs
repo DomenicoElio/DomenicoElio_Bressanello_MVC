@@ -1,4 +1,6 @@
-﻿using DomenicoElio_Bressanello_MVC.Restaurant_Core.Entities;
+﻿using Restaurant_Core.Entities;
+using Restaurant_Core.Interfaces;
+using Restaurant_Core.BusinessLayer;
 using System.ComponentModel.DataAnnotations;
 using System;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +17,8 @@ namespace DomenicoElio_Bressanello_MVC.RestaurantWebApp.Models
         public int Id { get; set; }
         [Required]
         public string Nome { get; set; }
-        public ICollection<PiattoViewModel>? Piatti { get; set; } = new List<PiattoViewModel>();  
+        public ICollection<PiattoViewModel>? Piatti { get; set; } = new List<PiattoViewModel>();
+
+        // preso sulla base dell'esercitazione
     }
 }

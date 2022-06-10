@@ -1,4 +1,6 @@
-﻿using DomenicoElio_Bressanello_MVC.Restaurant_Core.Entities;
+﻿using Restaurant_Core.Entities;
+using Restaurant_Core.Interfaces;
+using Restaurant_Core.BusinessLayer;
 using System.ComponentModel.DataAnnotations;
 using System;
 using Microsoft.EntityFrameworkCore;
@@ -17,8 +19,8 @@ namespace DomenicoElio_Bressanello_MVC.RestaurantWebApp.Models
         public string Username { get; set; }
         [Required, DataType(DataType.Password)]
         public string Password { get; set; }
-        public string ReturnUrl { get; set; } = "/";
-        [Required]
-        public Ruolo Ruolo { get; set; }
+        public string ReturnUrl { get; set; } = "/"; //verrà poi "riempito con l'url"
+
+        // preso sulla base dell'esercitazione
     }
 }

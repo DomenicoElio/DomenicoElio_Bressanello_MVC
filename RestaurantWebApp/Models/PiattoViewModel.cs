@@ -1,4 +1,6 @@
-﻿using DomenicoElio_Bressanello_MVC.Restaurant_Core.Entities;
+﻿using Restaurant_Core.Entities;
+using Restaurant_Core.Interfaces;
+using Restaurant_Core.BusinessLayer;
 using System.ComponentModel.DataAnnotations;
 using System;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Restaurant_Core.Entities;
 
 namespace DomenicoElio_Bressanello_MVC.RestaurantWebApp.Models
 {
@@ -23,5 +26,7 @@ namespace DomenicoElio_Bressanello_MVC.RestaurantWebApp.Models
 
         public int? MenuId { get; set; }
         public Menu? Menu { get; set; }
+
+        // preso sulla base dell'esercitazione
     }
 }
