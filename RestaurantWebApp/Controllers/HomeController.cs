@@ -1,8 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using RestaurantWebApp.Models;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace RestaurantWebApp.Controllers
+namespace DomenicoElio_Bressanello_MVC.RestaurantWebApp.Controllers
 {
     public class HomeController : Controller
     {
